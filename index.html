@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title><Таблицы и формы></Т></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Конференция "Современные веб-технологии"</h1>
+    <img src="pic.jpg" alt="картинка" width="200">
+    <p>Добро пожаловать на регистрацию участников конференции "Современные веб-технологии". Пожалуйста, заполните формы ниже, чтобы зарегистрироваться.</p>
+
+    <h2>Основная информация</h2>
+
+<form action="">
+<fieldset>
+
+<legend>Основная информация</legend>
+<label> Имя: <input type="text" name="name"></label><br><br>
+<label> Фамилия: <input type="text" name="surname"></label><br><br>
+<label> Электронная почта: <input type="email" name="email"></label><br><br>
+<label> Номер телефона: <input type="tel" name="phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"></label><br><br>
+<button type="submit">Отправить</button>
+
+</fieldset>
+</form>
+
+<h1>Информация об участии</h1>
+<form action="">
+<fieldset>
+<legend>Информация об участии</legend> <br>
+<label> Тип участия:
+    <select>
+        <option value="in-person">Очно</option>
+        <option value="online">Онлайн</option>
+    </select></label> <br>
+<p>Выберите интересующие сессии:</p>
+<label><input type="checkbox" name="languages" value="HTML">Сессия 1: Введение в HTML</label> <br>
+<label><input type="checkbox" name="languages" value="CSS">Сессия 2: Основы CSS</label> <br>
+<label><input type="checkbox" name="languages" value="JavaScript">Сессия 3: Основы JavaScript</label> <br>
+<p>Комментарии:</p>
+<label> <textarea name="comments"></textarea> <br>
+    <button type="submit">Отправить</button>
+</label>
+</fieldset>
+</form>
+
+<h2>Расписание конференции:</h2>
+<thead>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Время</th>
+            <th colspan="2">Сессия</th>
+        </tr>
+<tr>
+    <th>Тема</th>
+    <th>Докладчик</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>10:00 - 11:00</td>
+    <td>Введение в HTML</td>
+    <td>Иван Иванов</td>
+</tr>
+<tr>
+    <td>11:15 - 12:15</td>
+    <td>Основы CSS</td>
+    <td>Петр Петров</td>
+</tr>
+ <tr>
+    <td>12:30 - 13:30</td>
+    <td colspan="2">Основы JavaScript</td>
+ </tr>
+</tbody>
+
+    </table>
+
+
+
+</body>
+</html>
